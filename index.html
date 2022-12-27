@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+    <div class="forOneCardHeadingContaner">
+        <div id="headerForOneCard">
+            <button id="BackButtonForSingleCard" ><i class="fa fa-arrow-circle-left"  style="font-size:36px;margin: 10px;">BACK</i></button>
+            <h2 id="HeadingOfCardInsideGrid">For Heading Of Card</h2>
+            <button id="AddButtonForSingleCard"><i class="fa fa-plus-square" style="font-size:36px;"></i></button>
+        </div>
+
+
+        <div id="cardThatIsSelected">
+            <center id="cardThatIsSelectedCeneter">
+
+            </center>
+        </div>
+
+    </div>
+    
+    <div id="mainContainer">
+       <div id="header">
+            <h2 id = 'taskListHeading'>TASKS LISTS</h2>
+            <button id="anchorLink"><div><span id="plusSymbol" onclick="showPopUpMenu()">&plus;</span><span id="AddItemButtonHeading" onclick="showPopUpMenu()">ADD ITEMS</span></div></button>
+       </div>
+
+       <div> <p id="NoItems">NO ITEMS IN THE TODO LIST</p></div>
+
+       <div id="addNewlyAddedTaskHere">
+
+
+       </div>
+
+    </div> 
+
+
+    <div id="popUp" title="Add your task here in the box">
+        <h3 id="AddNewListHeadingPopUp">ADD NEW LIST</h3>
+        
+
+        <center>
+            <input type="text" name="inputTask" id="inputTaskId" placeholder="Add New Task">
+            <br>
+            <br>
+
+            <div>
+                <button id="addButtonPopUpScreen" onclick="AddNewTask()">ADD</button><button id="closeButtonPopUpScreen" onclick="ClosePopUpScreen()">CLOSE</button>
+            </div>
+        </center>
+        
+       
+
+    </div>
+
+
+    
+    <div id="popUpForCountry" title="Add your task here in the box for country">
+        <h3 id="AddNewListHeadingPopUpForCountry">ADD NEW ACTIVITY</h3>
+        
+
+        <center>
+            <input type="text" name="inputTask" id="inputTaskIdForCountry" placeholder="Add New Activity">
+            <br>
+            <br>
+
+            <div>
+                <button id="addButtonPopUpScreenForCountry"  >ADD</button><button id="closeButtonPopUpScreenForCountry" onclick="ClosePopUpScreenForCountry()">CLOSE</button>
+            </div>
+        </center>
+        
+       
+
+    </div>
+
+
+
+
+  
+    <script src="./main.js"></script>
+</body>
+</html>
